@@ -145,7 +145,7 @@ function draw() {
     ellipse(0, walkersBottom[i].yOffset, walkerWidth, walkerHeight);
   }
   pop();
-// 🆕 Dibujar el flash si corresponde
+// Intento de reinicio
 if (flashAlpha > 0) {
   fill(255, flashAlpha);
   rect(0, 0, width, height);
