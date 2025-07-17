@@ -25,12 +25,12 @@ function setup() {
   noStroke();
 
   colors = [
-    color(255, 0, 0,70),
-    color(255, 127, 0,70),
-    color(255, 255, 0,70),
-    color(0, 255, 0,70),
-    color(0, 0, 255,70),
-    color(75, 0, 130,70),
+    color(200, 0, 0,70)
+    color(255, 127, 0,70)
+    color(240, 240, 0,70)
+    color(0, 200, 0,70)
+    color(0, 0, 255,70)
+    color(75, 0, 130,70)
     color(139, 0, 255,70)
   ];
 
@@ -122,7 +122,7 @@ function draw() {
   posBottom.x += dxBottom;
   posBottom.y += dyBottom;
 
-  // 🆕 Envolver posiciones con tu lógica
+  //  Envolver posiciones
   wrapPosition(posTop);
   wrapPosition(posBottom);
 
@@ -157,7 +157,7 @@ if (flashAlpha > 0) {
   text("Amplitud: " + nf(vol, 1, 3), 10, height - 40);
 }
 
-// 🆕 Función wrap personalizada (con background al salir por la derecha)
+// Función para limitar la pantalla
 function wrapPosition(p) {
   if (
     p.x > width + walkerWidth ||
